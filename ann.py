@@ -26,7 +26,7 @@ X[:, 1] = labelencoder_X_1.fit_transform(X[:, 1])
 labelencoder_X_2 = LabelEncoder()
 X[:, 2] = labelencoder_X_2.fit_transform(X[:, 2])
 
-# ??? - something like the numbers do not mather, they are just indexes
+# indexes
 onehotencoder = OneHotEncoder(categorical_features=[1])
 X = onehotencoder.fit_transform(X).toarray()
 
